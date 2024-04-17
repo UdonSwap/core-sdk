@@ -1,8 +1,47 @@
-# Uniswap SDK Core
+# Udonswap Core SDK
 
-[![Unit Tests](https://github.com/Uniswap/uniswap-sdk-core/workflows/Unit%20Tests/badge.svg)](https://github.com/Uniswap/uniswap-sdk-core/actions?query=workflow%3A%22Unit+Tests%22)
-[![Lint](https://github.com/Uniswap/uniswap-sdk-core/workflows/Lint/badge.svg)](https://github.com/Uniswap/uniswap-sdk-core/actions?query=workflow%3ALint)
-[![npm version](https://img.shields.io/npm/v/@uniswap/sdk-core/latest.svg)](https://www.npmjs.com/package/@uniswap/sdk-core/v/latest)
-[![npm bundle size (scoped version)](https://img.shields.io/bundlephobia/minzip/@uniswap/sdk-core/latest.svg)](https://bundlephobia.com/result?p=@uniswap/sdk-core@latest)
+## Information
 
-This code is shared across Uniswap TypeScript SDKs.
+This is SDK version-1 of Udonswap Project and you can install it by type given command in Terminal:
+```sh
+npm i udonswap-v2
+```
+
+
+## Running tests
+
+To run the tests, follow these steps. You must have at least node v10 and [yarn](https://yarnpkg.com/) installed.
+
+First clone the repository:
+
+```sh
+git clone https://github.com/UdonSwap/core-sdk
+```
+
+Move into the uniswap-sdk working directory
+
+```sh
+cd core-sdk/
+```
+
+Install dependencies
+
+```sh
+yarn install 
+```
+or
+```sh
+npm install
+```
+
+Run tests
+
+```sh
+yarn test
+```
+or
+```sh
+npm test
+```
+
+This code is shared across Udonswap TypeScript SDKs.
