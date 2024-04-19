@@ -1,4 +1,4 @@
-import { Ether, Token } from './index'
+import { ETHER, Token } from './index'
 
 describe('Currency', () => {
   const ADDRESS_ZERO = '0x0000000000000000000000000000000000000000'
@@ -9,10 +9,10 @@ describe('Currency', () => {
 
   describe('#equals', () => {
     it('ether on same chains is ether', () => {
-      expect(Ether.onChain(1).equals(Ether.onChain(1)))
+      expect(ETHER.onChain(1).equals(ETHER.onChain(1)))
     })
     it('ether is not token0', () => {
-      expect(Ether.onChain(1).equals(t0)).toStrictEqual(false)
+      expect(ETHER.onChain(1).equals(t0)).toStrictEqual(false)
     })
     it('token1 is not token0', () => {
       expect(t1.equals(t0)).toStrictEqual(false)
