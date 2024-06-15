@@ -8,9 +8,9 @@
   "files": [
     "dist"
   ],
-  "repository": "https://github.com/DarshitSwap/core-sdk.git",
+  "repository": "https://github.com/UdonSwap/core-sdk.git",
   "keywords": [
-    "darshitswap",
+    "udonswap",
     "ethereum"
   ],
   "module": "dist/sdk-core.esm.js",

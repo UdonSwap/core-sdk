@@ -13,15 +13,15 @@ type ChainAddresses = {
   v1MixedRouteQuoterAddress?: string
 }
 
-const DEFAULT_NETWORKS = [ChainId.MODE]
+// const DEFAULT_NETWORKS = [ChainId.MODE]
 // ,ChainId.MAINNET, ChainId.GOERLI, ChainId.SEPOLIA]
 
-function constructSameAddressMap(address: string, additionalNetworks: ChainId[] = []): AddressMap {
-  return DEFAULT_NETWORKS.concat(additionalNetworks).reduce<AddressMap>((memo, chainId) => {
-    memo[chainId] = address
-    return memo
-  }, {})
-}
+// function constructSameAddressMap(address: string, additionalNetworks: ChainId[] = []): AddressMap {
+//   return DEFAULT_NETWORKS.concat(additionalNetworks).reduce<AddressMap>((memo, chainId) => {
+//     memo[chainId] = address
+//     return memo
+//   }, {})
+// }
 
 // export const UNI_ADDRESSES: AddressMap = constructSameAddressMap('0x1f9840a85d5aF5bf1D1762F925BDADdC4201F984', [
 //   ChainId.OPTIMISM,
@@ -301,9 +301,9 @@ export const MULTICALL_ADDRESSES: AddressMap = {
 /**
  * The oldest V0 governance address
  */
-export const GOVERNANCE_ALPHA_V0_ADDRESSES: AddressMap = constructSameAddressMap(
-  '0x5e4be8Bc9637f0EAA1A755019e06A68ce081D58F'
-)
+// export const GOVERNANCE_ALPHA_V0_ADDRESSES: AddressMap = constructSameAddressMap(
+//   '0x5e4be8Bc9637f0EAA1A755019e06A68ce081D58F'
+// )
 /**
  * The older V1 governance address
  */
@@ -317,7 +317,7 @@ export const GOVERNANCE_ALPHA_V0_ADDRESSES: AddressMap = constructSameAddressMap
 //   [ChainId.MAINNET]: '0x408ED6354d4973f66138C91495F2f2FCbd8724C3'
 // }
 
-export const TIMELOCK_ADDRESSES: AddressMap = constructSameAddressMap('0x1a9C8182C09F50C8318d769245beA52c32BE35BC')
+// export const TIMELOCK_ADDRESSES: AddressMap = constructSameAddressMap('0x1a9C8182C09F50C8318d769245beA52c32BE35BC')
 
 // export const MERKLE_DISTRIBUTOR_ADDRESS: AddressMap = {
 //   [ChainId.MAINNET]: '0x090D4613473dEE047c3f2706764f49E0821D256e'
@@ -344,9 +344,9 @@ export const NONFUNGIBLE_POSITION_MANAGER_ADDRESSES: AddressMap = {
   }, {})
 }
 
-export const ENS_REGISTRAR_ADDRESSES: AddressMap = {
-  ...constructSameAddressMap('0x00000000000C2E074eC69A0dFb2997BA6C7d2e1e')
-}
+// export const ENS_REGISTRAR_ADDRESSES: AddressMap = {
+//   ...constructSameAddressMap('0x00000000000C2E074eC69A0dFb2997BA6C7d2e1e')
+// }
 
 // export const SOCKS_CONTROLLER_ADDRESSES: AddressMap = {
 //   [ChainId.MAINNET]: '0x65770b5283117639760beA3F867b69b3697a91dd'
